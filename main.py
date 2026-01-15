@@ -26,17 +26,17 @@ st.session_state.setdefault("chat_history", [])
 
 
 with st.sidebar:
-    st.header(" Chat History")
+    st.header("💬 Chat History")
     conversations = get_all_conversations()
 
-    if st.button("New Chat"):
+    if st.button("➕ New Chat", use_container_width=True):
         st.session_state.conversation_id = None
         st.session_state.conversation_title = None
         st.session_state.chat_history = []
 
     for cid, title in conversations.items():
         is_current = cid == st.session_state.conversation_id
-        label = f"**{title}**" if is_current else title
+        label = f"{title}" if is_current else title
         if st.button(label, key=f"conv_{cid}"):
             doc = get_conversation(cid) or {}
             st.session_state.conversation_id = cid
