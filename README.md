@@ -99,7 +99,7 @@ streamlit run app.py
 
 # 📹 Demo Video:
 
-https://youtu.be/ZWDa6QvRVPo
+[https://youtu.be/ZWDa6QvRVPo](https://www.youtube.com/watch?v=ZWDa6QvRVPo)
 
 # 🎯 Why This Project
 
